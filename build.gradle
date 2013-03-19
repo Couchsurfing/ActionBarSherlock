@@ -29,8 +29,7 @@ dependencies {
 task copyMainDeps (type: Copy) { 
    description = 'Copy Release depencies Jar. Useful for Eclipse/Ant build.'
    libDir = new File(project.projectDir, '/library/libs') 
-   
-      println libDir 
+    println "Copy Main Dep: " + libDir 
    for(file in configurations.compile) { 
       println file 
       copy { 
@@ -40,5 +39,3 @@ task copyMainDeps (type: Copy) {
       } 
    } 
 } 
-
-assemble.dependsOn copyMainDeps
