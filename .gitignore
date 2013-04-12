@@ -4,6 +4,9 @@ gen
 lint.xml
 
 #Eclipse
+.project
+.classpath
+.settings/
 
 #IntelliJ IDEA
 .idea
@@ -27,5 +30,7 @@ proguard-project.txt
 .DS_Store
 tmp
 build/
+
+
 
 
